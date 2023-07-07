@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Turo - Car Rental</title>
+    <!-- Document metadata -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Turo - Car Rental" />
+    <meta
+      name="keywords"
+      content="car rental, airbnb for cars, car rental near me, rent cars, car"
+    />
+    <!-- Sytlesheet links -->
+    <link href="turo_base.css" rel="stylesheet" media="all" />
+    <link href="turo_layout.css" rel="stylesheet" media="all" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      media="all"
+    />
+  </head>
+
+  <body>
+    <!-- Header section (flexbox layout)-->
+    <header>
+      <!-- Inline logo image / link -->
+      <a href="index.html"
+        ><img src="images/logo.png" id="logo" alt="Turo Logo" width="200px"
+      /></a>
+      <!-- Text-level element with emphasized formatted text -->
+      <span><em>Your ultimate car rental experience</em></span>
+      <!-- Navigation list, functions as a pull down menu when the screen is mobile sized -->
+      <nav>
+        <a href="#" id="navicon"
+          ><img src="images/hamburger_menu.png" alt="" width="40px"
+        /></a>
+        <ul>
+          <!-- Navigation list item links -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main section -->
+    <section id="main-content">
+      <h1>Welcome to Turo!</h1>
+
+      <!-- Filter grouping element -->
+      <div id="filter-grid">
+        <div id="city-filter">
+          <label for="cities">City</label>
+          <input type="text" id="cities" name="cities" list="city-list" />
+          <datalist id="city-list" />
+        </div>
+        <div id="date-time-filter">
+          <label for="date-time">Date / Time:</label>
+          <input type="datetime-local" id="date-time" />
+        </div>
+        <div id="type-filter">
+          <label for="type">Type:</label>
+          <select name="type" id="type">
+            <option value="suv">SUV</option>
+            <option value="suv">Intermediate</option>
+            <option value="suv">Compact</option>
+            <option value="suv">Economy</option>
+            <option value="suv">Standard</option>
+          </select>
+        </div>
+        <div id="color-filter">
+          <label for="color">Color:</label>
+          <select name="color" id="color">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Result grouping element -->
+      <div class="result">
+        <img src="images/hot_deal.png" class="hot-deal-image" alt="Hot deal" />
+        <img src="images/cars/suv.jpg" class="car-image" alt="SUV" />
+        <div class="type-and-desc">
+          <h2>SUV</h2>
+          <!-- Text-level element -->
+          <span>Nissan Rogue</span>
+        </div>
+        <div class="details">
+          <h3 class="features-header">Features</h3>
+          <!-- Formatted list with custom bullet points using pseudo-class ::before (see CSS) -->
+          <ul class="features-list">
+            <li class="feature">5 seats</li>
+            <li class="feature">3 Large bags</li>
+            <li class="feature">Automatic</li>
+            <li class="feature">Unlimited mileage</li>
+          </ul>
+          <h3 class="pickup-location-header">Pickup Location</h3>
+          <span class="pickup-location">Charlotte, NC</span>
+          <h3 class="price-header">Price</h3>
+          <span class="price">$520.73</span>
+        </div>
+        <input type="button" value="Reserve" />
+      </div>
+      <div class="result">
+        <img src="images/cars/standard.jpg" alt="Standard" />
+        <div class="type-and-desc">
+          <h2>Standard</h2>
+          <span>Buick Verano</span>
+        </div>
+        <div class="details">
+          <h3 class="features-header">Features</h3>
+          <ul class="features-list">
+            <li class="feature">5 seats</li>
+            <li class="feature">2 Large bags</li>
+            <li class="feature">Automatic</li>
+            <li class="feature">Unlimited mileage</li>
+          </ul>
+          <h3 class="pickup-location-header">Pickup Location</h3>
+          <span class="pickup-location">Charlotte, NC</span>
+          <h3 class="price-header">Price</h3>
+          <span class="price">$400.25</span>
+        </div>
+        <input type="button" value="Reserve" />
+      </div>
+      <div class="result">
+        <img src="images/cars/midsize.jpg" alt="Mid-size" />
+        <div class="type-and-desc">
+          <h2>Mid-size</h2>
+          <span>Toyota Corolla</span>
+        </div>
+        <!-- Details contains a grid layout -->
+        <div class="details">
+          <h3 class="features-header">Features</h3>
+          <ul class="features-list">
+            <li class="feature">5 seats</li>
+            <li class="feature">2 Large bags</li>
+            <li class="feature">Automatic</li>
+            <li class="feature">Unlimited mileage</li>
+          </ul>
+          <h3 class="pickup-location-header">Pickup Location</h3>
+          <span class="pickup-location">Charlotte, NC</span>
+          <h3 class="price-header">Price</h3>
+          <span class="price">$375.80</span>
+        </div>
+        <input type="button" value="Reserve" />
+      </div>
+      <div class="result">
+        <img src="images/cars/compact.jpg" alt="Compact" />
+        <div class="type-and-desc">
+          <h2>Compact</h2>
+          <span>Hyundai Velostar</span>
+        </div>
+        <div class="details">
+          <h3 class="features-header">Features</h3>
+          <ul class="features-list">
+            <li class="feature">4 seats</li>
+            <li class="feature">1 Large bags</li>
+            <li class="feature">Automatic</li>
+            <li class="feature">Unlimited mileage</li>
+          </ul>
+          <h3 class="pickup-location-header">Pickup Location</h3>
+          <span class="pickup-location">Charlotte, NC</span>
+          <h3 class="price-header">Price</h3>
+          <span class="price">$320.10</span>
+        </div>
+        <input type="button" value="Reserve" />
+      </div>
+      <div class="result">
+        <img src="images/cars/economy.jpg" alt="Economy" />
+        <div class="type-and-desc">
+          <h2>Economy</h2>
+          <span>Nissan Versa</span>
+        </div>
+        <div class="details">
+          <h3 class="features-header">Features</h3>
+          <ul class="features-list">
+            <li class="feature">4 seats</li>
+            <li class="feature">1 Large bags</li>
+            <li class="feature">Automatic</li>
+            <li class="feature">Unlimited mileage</li>
+          </ul>
+          <h3 class="pickup-location-header">Pickup Location</h3>
+          <span class="pickup-location">Charlotte, NC</span>
+          <h3 class="price-header">Price</h3>
+          <span class="price">$200.99</span>
+        </div>
+        <input type="button" value="Reserve" />
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <!-- Character references included below -->
+      <p>Turo &#8226; 1206 Elizabeth Ave, Charlotte, NC 28204</p>
+      <p>&copy;2023</p>
+    </footer>
+
+    <!-- Contact us bubble (absolute positioned without relative parent) -->
+    <a href="contact.html" id="contact-us-bubble"
+      ><img src="images/contact_us.png" alt="Contact us"
+    /></a>
+
+    <script type="text/javascript">
+      const datalist = document.getElementById('city-list');
+      const cityInput = document.getElementById('cities');
+      const cityDataRequest = new XMLHttpRequest();
+
+      cityDataRequest.onreadystatechange = (response) => {
+        if (cityDataRequest.readyState === 4) {
+          if (cityDataRequest.status === 200) {
+            const cityOptions = cityDataRequest.responseText.split('\n');
+
+            cityOptions.forEach((cityOption) => {
+              const option = document.createElement('option');
+
+              option.value = cityOption;
+
+              datalist.appendChild(option);
+            });
+
+            cityInput.placeholder = 'Start typing a city';
+          } else {
+            cityInput.placeholder = 'Failed to load city options';
+          }
+        }
+      };
+
+      cityInput.placeholder = 'Loading cities...';
+      cityDataRequest.open('GET', 'cities.txt', true);
+      cityDataRequest.send();
+    </script>
+  </body>
+</html>

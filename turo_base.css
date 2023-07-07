@@ -1,0 +1,266 @@
+/* Main styles */
+
+html {
+  font-family: 'Raleway', Calibri, Candara, Segoe, Segoe UI, Optima, Arial,
+    sans-serif;
+}
+
+body {
+  /* The page background uses a linear gradient generated from my color palette */
+  background: linear-gradient(
+    90deg,
+    rgba(99, 180, 209, 0.1) 0%,
+    rgba(144, 252, 249, 0.1) 35%,
+    rgba(118, 153, 212, 0.1) 100%
+  );
+}
+
+a {
+  color: #9448bc;
+  text-decoration: none;
+}
+
+/* Pseudo-classes for links below */
+a:visited {
+  color: #9448bc;
+}
+
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  color: #9448bc;
+}
+
+/* Form styles */
+
+input[type='text'], /* Attribute selectors, more below */
+input[type='datetime-local'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #480355;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type='datetime-local'] {
+  background: white;
+  padding: 11px 20px;
+}
+
+input[type='button'],
+input[type='submit'] {
+  background-color: #9448bc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  /* Display input element as a block */
+  display: block;
+  padding: 10px 20px;
+}
+
+select {
+  appearance: none;
+  background: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.1018 8C5.02785 8 4.45387 9.2649 5.16108 10.0731L10.6829 16.3838C11.3801 17.1806 12.6197 17.1806 13.3169 16.3838L18.8388 10.0731C19.5459 9.2649 18.972 8 17.898 8H6.1018Z' fill='%23212121'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  padding: 12px 20px;
+}
+
+input[type='button']:hover,
+input[type='submit']:hover {
+  background-color: #480355;
+}
+
+/* Section styles */
+
+header span {
+  display: none;
+}
+
+footer {
+  background: #7699d4;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
+  font-style: italic;
+  font-size: 0.9em;
+  padding: 0 20px 0 20px;
+}
+
+/* Navigation styles */
+
+a#navicon {
+  display: none;
+}
+
+nav > ul {
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  background-color: #480355;
+  /* Float nav elements to the left */
+  float: left;
+  /* Handle overflow to ensure we don't see a scrollbar */
+  overflow: hidden;
+}
+
+nav > ul > li:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+nav > ul > li:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav > ul > li > a {
+  /* Display nav link as a block */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav > ul > li > a:visited {
+  color: white;
+}
+
+nav > ul > li > a:hover {
+  background-color: #9448bc;
+}
+
+/* Filter styles */
+
+#filter-grid label {
+  font-weight: bold;
+}
+
+/* Result styles */
+
+div.result {
+  background: white;
+  border: 1px solid #480355;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  /* The following line allows our absolute .hot-deal-image to be positioned relative to the container */
+  position: relative;
+}
+
+div.result > .hot-deal-image {
+  /* Position absolutely in the upper left hand corner of the car result */
+  position: absolute;
+  width: 120px;
+  top: 0;
+  left: 0;
+}
+
+div.result > .car-image {
+  height: 200px;
+  width: 300px;
+}
+
+div.result > .type-and-desc {
+  padding: 20px;
+}
+
+div.result > .details > .features-list {
+  list-style-type: none;
+}
+
+div.result > .details > .features-list > li {
+  margin-bottom: 10px;
+}
+
+/* Restyle result feature list items with a pseudoclass & custom images */
+div.result > .details > .features-list > li::before {
+  margin: 0 5px 0 -15px;
+  width: 16px;
+  height: 16px;
+}
+
+div.result > .details > ul > li:nth-child(1)::before {
+  content: url('images/seats.svg');
+}
+
+div.result > .details > ul > li:nth-child(2)::before {
+  content: url('images/bags.svg');
+}
+
+div.result > .details ul > li:nth-child(3)::before {
+  content: url('images/transmission.svg');
+}
+
+div.result > .details ul > li:nth-child(4)::before {
+  content: url('images/mileage.svg');
+}
+
+/* About styles */
+
+#car-rental-image {
+  float: right;
+  border-radius: 10px;
+  height: 300px;
+  margin: 0px 20px 20px 20px;
+}
+
+/* Contact us styles */
+
+#contact-us-bubble {
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  /* Display contact us bubble as a block */
+  display: block;
+  font-size: 2em;
+  height: 60px;
+  line-height: 60px;
+  opacity: 50%;
+  position: absolute;
+  right: 50px;
+  text-align: center;
+  top: 20px;
+  width: 60px;
+}
+
+#contact-us-bubble:hover {
+  opacity: 100%;
+}
+
+#contact-us-bubble img { /* Contextual selector */
+  padding-top: 10px;
+  width: 48px;
+}
+
+#contact-us-container > input,
+#contact-us-container > textarea {
+  margin-bottom: 10px;
+}
+
+#contact-us-container > label {
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top;
+  width: 100px;
+}

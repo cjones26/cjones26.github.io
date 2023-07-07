@@ -1,0 +1,206 @@
+/* Main styles */
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/* Section styles */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section#main-content {
+  flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  align-content: space-between;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* Filter styles */
+
+#filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+#filter-grid > #city-filter {
+  grid-column: 1 / 1;
+}
+
+#filter-grid > #date-time-filter {
+  grid-column: 2 / 2;
+}
+
+#filter-grid > #type-filter {
+  grid-column: 3 / 3;
+}
+
+#filter-grid > #color {
+  grid-column: 4 / 4;
+}
+
+/* Result styles (grid / flexbox layout) */
+
+div.result {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.result > .details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  column-gap: 40px;
+  place-items: center;
+}
+
+div.result > .type-and-desc {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.result > .details > .features-header {
+  grid-row: 1 / 1;
+}
+
+div.result > .details > .features-list {
+  grid-row: 2 / 2;
+  grid-column: 1 / 1;
+  list-style-type: none;
+}
+
+div.result > .details > .pickup-location-header {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+div.result > .details > .pickup-location {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+div.result > .details > .price-header {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+div.result > .details > .price {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+}
+
+/* Contact us styles */
+
+#contact-us-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-us-container > input[type='submit'] {
+  align-self: flex-start;
+}
+
+/* Mobile (responsive design) styles */
+
+@media screen and (min-width: 1200px) {
+  /* Only display the slogan on large screens to avoid breaking the responsive nav menu */
+  header span {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Main styles */
+
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* Section styles */
+
+  header {
+    display: block;
+  }
+
+  /* Navigation styles */
+
+  a#navicon {
+    display: block;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  a#navicon:hover + ul,
+  nav > ul:hover {
+    display: block;
+    /* Handle overflow to ensure we don't see a scrollbar */
+    overflow: hidden;
+  }
+
+  /* Filter styles (grid layout) */
+
+  #filter-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+
+  #filter-grid > #city-filter {
+    grid-column: auto;
+    grid-row: 1 / 1;
+  }
+
+  #filter-grid > #date-time-filter {
+    grid-column: auto;
+    grid-row: 2 / 2;
+  }
+
+  #filter-grid > #type-filter {
+    grid-column: auto;
+    grid-row: 3 / 3;
+  }
+
+  #filter-grid > #color {
+    grid-column: auto;
+    grid-row: 4 / 4;
+  }
+
+  /* Result styles */
+
+  div.result {
+    justify-content: center;
+  }
+
+  /* About styles */
+
+  #car-rental {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
