@@ -1,13 +1,12 @@
 body {
-  background: rgb(84, 106, 129);
-  background: linear-gradient(
-    142deg,
-    rgba(84, 106, 129, 1) 35%,
-    rgba(23, 71, 80, 1) 100%
+  background-image: radial-gradient(
+    circle at 0.5% 50.5%,
+    rgba(219, 229, 255, 0.45) 0,
+    #fff 100.2%
   );
-  background-repeat: : no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
+  color: rgb(71, 71, 71);
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 100%;
@@ -30,7 +29,7 @@ h3 {
 
 a {
   font-weight: bold;
-  color: #adff2f;
+  color: rgb(48, 102, 97);
 }
 
 a:hover {
