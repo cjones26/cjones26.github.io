@@ -1,5 +1,10 @@
 body {
-  background-color: rgb(84, 106, 129);
+  background: rgb(84, 106, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(84, 106, 129, 1) 35%,
+    rgba(23, 71, 80, 1) 100%
+  );
   color: white;
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
