@@ -69,7 +69,19 @@ footer {
   text-align: center;
 }
 
-footer 
+footer nav,
+footer #tagline {
+  margin: 20px 0 20px;
+}
+
+footer #company-info {
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+footer #tagline {
+  font-style: italic;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
