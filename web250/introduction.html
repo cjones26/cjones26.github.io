@@ -3,22 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Charles Jones' WEB250 Introduction Page">
+  <meta name="keywords" content="WEB250, Charles Jones, CPCC, Web Development">
+  <meta name="author" content="Charles L. Jones">
   <link href="styles/default.css" rel="stylesheet" type="text/css">
-  <title>WEB250 &centerdot; Charles Jones' &centerdot; Cool Jaguar &centerdot; Introduction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <title>WEB250 | Charles Jones' | Cool Jaguar | Introduction</title>
 </head>
 
 <body>
-  <header>
-    <h1>Charles Jones' &centerdot; Cool Jaguar &centerdot; Introduction</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contract.html">Course Contract</a></li>
-        <li><a href="introduction.html">Introduction</a></li>
-      </ul>
-    </nav>
-  </header>
-  </header>
+  <div data-include="components/header.html" data-replace="%courseTitle%:, %pageTitle%: | Introduction"></div>
 
   <main>
     <h2>Introduction</h2>
@@ -117,41 +114,9 @@
     </ul>
   </main>
 
-  <footer>
-    <br>
-    <nav>
-      <a href="https://github.com/cjones26" target="_blank">Github</a> &#9553;
-      <a href="https://cjones26.github.io/" target="_blank">Github.io</a>
-      &#9553;
-      <a href="https://cjones26.github.io/" target="_blank">WEB250.io</a>
-      &#9553;
-      <a href="https://www.freecodecamp.org/cjones26" target="_blank">freeCodeCamp</a>
-      &#9553;
-      <a href="https://www.codecademy.com/profiles/cjones26" target="_blank">Codeacademy</a>
-      &#9553;
-      <a href="https://jsfiddle.net/user/cjones26/fiddles/" target="_blank">JSFiddle</a>
-      &#9553;
-      <a href="https://www.linkedin.com/in/charlesljones/" target="_blank">LinkedIn</a>
-      &#9553;
-      <a href="https://www.nigglingaspirations.com" target="_blank">IT Blog</a>
-    </nav>
-    <br>
-    Never too late to learn, always ready to grow.
-    <br>
-    <br>
-    Designed by &copy;Valence Software
-    <br>
-    <br>
-    <div>
-      <a href="https://validator.w3.org/check?uri=referer">
-        <img src="images/button-valid-html5.png" alt="Link to HTML validator">
-      </a>
+  <div data-include="components/footer.html"></div>
 
-      <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img src="images/button-valid-css.png" alt="Link to CSS validator">
-      </a>
-    </div>
-  </footer>
+  <script src="scripts/include.min.js"></script>
 </body>
 
 </html>

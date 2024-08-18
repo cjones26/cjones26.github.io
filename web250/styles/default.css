@@ -7,6 +7,20 @@ body {
   margin: 50px;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Gruppo', sans-serif;
+}
+
 a {
   font-weight: bold;
   color: #adff2f;
