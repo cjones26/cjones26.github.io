@@ -5,7 +5,7 @@ body {
     rgba(84, 106, 129, 1) 35%,
     rgba(23, 71, 80, 1) 100%
   );
-  background-repeat: : no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
@@ -15,15 +15,18 @@ body {
 }
 
 h1 {
+  display: flex;
+  font-family: 'Gruppo', sans-serif;
   font-size: 3em;
+  justify-content: center;
+  text-align: center;
 }
 
 h2 {
+  font-family: 'Gruppo', sans-serif;
   font-size: 2em;
 }
 
-h1,
-h2,
 h3 {
   font-family: 'Gruppo', sans-serif;
 }
@@ -35,12 +38,6 @@ a {
 
 a:hover {
   color: orange;
-}
-
-header h1 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 nav {
