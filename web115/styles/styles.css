@@ -1,41 +1,45 @@
 body {
   background-image: radial-gradient(
     circle at 0.5% 50.5%,
-    rgba(219, 229, 255, 0.45) 0,
+    rgba(208, 240, 192, 0.45) 0,
     #fff 100.2%
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: rgb(71, 71, 71);
-  font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2f4f4f;
+  font-family: 'Raleway', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
   font-size: 100%;
   margin: 5% 20%;
 }
 
 h1 {
   display: flex;
-  font-family: 'Gruppo', sans-serif;
+  color: #bbadff;
+  font-family: 'Fredoka', sans-serif;
   font-size: 3em;
   justify-content: center;
   text-align: center;
 }
+
 h2 {
-  font-family: 'Gruppo', sans-serif;
+  color: #bbadff;
+  font-family: 'Fredoka', sans-serif;
   font-size: 2em;
 }
 
 h3 {
-  font-family: 'Gruppo', sans-serif;
+  color: #bbadff;
+  font-family: 'Fredoka', sans-serif;
 }
 
 a {
   font-weight: bold;
-  color: rgb(48, 102, 97);
+  color: #20b2aa;
 }
 
 a:hover {
-  color: orange;
+  color: #00bfff;
 }
 
 nav {
@@ -83,6 +87,67 @@ footer #company-info {
 
 footer #tagline {
   font-style: italic;
+  font-weight: 800;
+}
+
+/* Table styles */
+
+table {
+  background-color: #fdfdfd;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+table tr td:first-child {
+  font-weight: bold;
+}
+
+th,
+td {
+  border: 1px solid #2f4f4f;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #bbadff;
+  color: #ffffff;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+.color-box {
+  border: 1px solid #2f4f4f;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+}
+
+#color-box-background {
+  background-image: radial-gradient(
+    circle at 0.5% 50.5%,
+    rgba(208, 240, 192, 0.45) 0,
+    #fff 100.2%
+  );
+}
+
+#color-box-heading {
+  background-color: #bbadff;
+}
+
+#color-box-text {
+  background-color: #2f4f4f;
+}
+
+#color-box-link-normal {
+  background-color: #20b2aa;
+}
+
+#color-box-link-hovered {
+  background-color: #00bfff;
 }
 
 /* Small devices (landscape phones, 576px and up) */
