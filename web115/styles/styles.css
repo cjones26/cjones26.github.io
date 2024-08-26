@@ -130,7 +130,7 @@ th {
 #color-box-background {
   background-image: radial-gradient(
     circle at 0.5% 50.5%,
-    d6e4cf 0,
+    #d6e4cf 0,
     #fff 100.2%
   );
 }
