@@ -1,7 +1,8 @@
 body {
+  background: #d6e4cf;
   background-image: radial-gradient(
     circle at 0.5% 50.5%,
-    rgba(208, 240, 192, 0.45) 0,
+    #d6e4cf 0,
     #fff 100.2%
   );
   background-repeat: no-repeat;
@@ -129,7 +130,7 @@ th {
 #color-box-background {
   background-image: radial-gradient(
     circle at 0.5% 50.5%,
-    rgba(208, 240, 192, 0.45) 0,
+    d6e4cf 0,
     #fff 100.2%
   );
 }
