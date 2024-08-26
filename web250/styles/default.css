@@ -69,8 +69,9 @@ h3 {
 }
 
 a {
-  font-weight: bold;
   color: var(--color-link);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
@@ -118,10 +119,6 @@ footer #tagline {
 footer #company-info {
   font-size: small;
   margin-bottom: 10px;
-}
-
-footer #tagline {
-  font-style: italic;
 }
 
 /* Table styles */
