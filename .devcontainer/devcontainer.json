@@ -1,4 +1,0 @@
-{
-  "dockerComposeFile": "${workspaceFolder}/docker-compose.yml",
-  "service": "devcontainer"
-}
