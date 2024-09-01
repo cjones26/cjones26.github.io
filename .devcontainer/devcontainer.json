@@ -1,0 +1,7 @@
+{
+  "name": "CPCC WEB Dev Container",
+  "dockerComposeFile": "../docker/docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/var/www/html",
+  "remoteUser": "corte"
+}
