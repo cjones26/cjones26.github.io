@@ -1,2 +1,3 @@
 .vscode/
 mysql.sock
+docker/local-data
