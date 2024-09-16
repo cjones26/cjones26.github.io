@@ -27,10 +27,14 @@ form.addEventListener("submit", function (event) {
       .replace(/\s+/g, " ")
       .trim();
 
-  for (let x = 0; x < 125; x++) {
+  const count = prompt(`How high do you want to count, ${firstName}?`);
+
+  for (let x = 1; x <= count; x++) {
     // Create a new list item
     const listItem = document.createElement("li");
-    listItem.textContent = "Plushy Bone";
+    listItem.textContent = `Plushy Bone - ${
+      x % 2 === 0 ? "The number is even" : "The number is odd"
+    }`;
 
     // Append the list item to the loop list
     loopList.appendChild(listItem);
