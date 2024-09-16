@@ -17,7 +17,7 @@ form.addEventListener("submit", function (event) {
   }
 
   // First, make sure we reset our heading
-  greeting.textContent = "Welcome to Paws &amp; Whiskers Co.";
+  greeting.textContent = "Welcome to Paws & Whiskers Co.";
   // And clear our list
   loopList.innerHTML = "";
 
