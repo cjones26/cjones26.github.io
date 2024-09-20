@@ -1,12 +1,12 @@
 body {
   background: #d6e4cf;
-  /* background-image: radial-gradient(
+  background-image: radial-gradient(
     circle at 0.5% 50.5%,
     #d6e4cf 0,
     #fff 100.2%
   );
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed;
   color: #2f4f4f;
   font-family: "Raleway", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
@@ -15,7 +15,7 @@ body {
 
 h1 {
   display: flex;
-  color: #9f95d3;
+  color: #5c327b;
   font-family: "Fredoka", sans-serif;
   font-size: 3em;
   justify-content: center;
@@ -23,13 +23,14 @@ h1 {
 }
 
 h2 {
-  color: #9f95d3;
+  color: #5c327b;
   font-family: "Fredoka", sans-serif;
   font-size: 2em;
+  margin: 0;
 }
 
 h3 {
-  color: #9f95d3;
+  color: #5c327b;
   font-family: "Fredoka", sans-serif;
 }
 
@@ -40,22 +41,42 @@ a {
 }
 
 a:hover {
-  color: #00bfff;
+  color: #9f95d3;
 }
 
-nav {
+header {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+header img {
+  align-self: center;
+}
+
+header nav {
+  font-size: 1.2em;
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #d6e4cf;
+  background-image: radial-gradient(
+    circle at 0.5% 50.5%,
+    #fff 100.2% #d6e4cf 0
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.219);
 }
 
 nav ul li {
-  padding: 10px;
+  padding: 15px 20px;
 }
 
 figure figcaption {
@@ -63,32 +84,50 @@ figure figcaption {
 }
 
 main {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8f9fa59;
+  padding: 20px 20px 0 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.219);
+  border-radius: 0 0 5px 5px;
+  font-size: 1.2em;
 }
 
+main ul {
+  text-align: left;
+}
+
+main ul li ul {
+  margin-top: 5px;
+}
+
+/* Footer Styles */
 footer {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 20px 0;
 }
 
 footer nav,
 footer #tagline {
-  margin: 20px 0 20px;
+  margin: 20px 0;
 }
 
 footer #company-info {
-  font-size: small;
+  font-size: 0.875rem;
   margin-bottom: 10px;
+  color: #666;
 }
 
 footer #tagline {
-  font-style: italic;
   font-weight: 800;
+  color: #333;
 }
 
 /* Table styles */
@@ -114,7 +153,7 @@ td {
 }
 
 th {
-  background-color: #9f95d3;
+  background-color: #5c327b;
   color: #ffffff;
   font-family: "Fredoka One", sans-serif;
 }
@@ -136,7 +175,7 @@ th {
 }
 
 #color-box-heading {
-  background-color: #9f95d3;
+  background-color: #5c327b;
 }
 
 #color-box-text {
@@ -148,7 +187,7 @@ th {
 }
 
 #color-box-link-hovered {
-  background-color: #00bfff;
+  background-color: #9f95d3;
 }
 
 /* Form styles */
@@ -180,7 +219,7 @@ button {
 }
 
 button:hover {
-  background-color: #9f95d3;
+  background-color: #5c327b;
 }
 
 ul {
