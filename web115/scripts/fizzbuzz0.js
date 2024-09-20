@@ -22,10 +22,11 @@ form.addEventListener("submit", function (event) {
   loopList.innerHTML = "";
 
   // Now we can add the user's name to the greeting
-  greeting.textContent =
-    `${greeting.textContent} ${firstName} ${middleInitial} ${lastName}!`
-      .replace(/\s+/g, " ")
-      .trim();
+  greeting.textContent = `${
+    greeting.textContent
+  } ${firstName} ${middleInitial}${middleInitial ? "." : ""} ${lastName}!`
+    .replace(/\s+/g, " ")
+    .trim();
 
   const count = prompt(`How high do you want to count, ${firstName}?`);
 
