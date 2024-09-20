@@ -1,4 +1,4 @@
-[data-theme='light'] {
+[data-theme="light"] {
   --color-background-base: #f0f8ff;
   --color-background-end: #ffffff;
   --color-foreground: #483d8b;
@@ -15,7 +15,7 @@
   --color-button-active-background: #483d8b;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --color-background-base: #2f4f4f;
   --color-background-end: #000000;
   --color-foreground: #d3d3d3;
@@ -28,8 +28,8 @@
   --color-table-border: #d3d3d3;
   --color-button-background: #daa520;
   --color-button-foreground: #1c1c1c;
-  --color-button-hover-background: #FFD700;
-  --color-button-active-background: #FFB14E;
+  --color-button-hover-background: #ffd700;
+  --color-button-active-background: #ffb14e;
 }
 
 body {
@@ -42,8 +42,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--color-foreground);
-  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
   font-size: 100%;
   margin: 5% 20%;
 }
@@ -51,7 +51,7 @@ body {
 h1 {
   color: var(--color-header);
   display: flex;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3em;
   justify-content: center;
   text-align: center;
@@ -59,13 +59,13 @@ h1 {
 
 h2 {
   color: var(--color-header);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
 }
 
 h3 {
   color: var(--color-header);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -147,7 +147,7 @@ td {
 th {
   background-color: var(--color-table-header-background);
   color: var(--color-table-header-foreground);
-  font-family: 'Fredoka One', sans-serif;
+  font-family: "Fredoka One", sans-serif;
 }
 
 /* Color box styles */
@@ -192,7 +192,7 @@ button {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
