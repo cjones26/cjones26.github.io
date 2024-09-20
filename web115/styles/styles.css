@@ -1,12 +1,12 @@
 body {
   background: #d6e4cf;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle at 0.5% 50.5%,
     #d6e4cf 0,
     #fff 100.2%
   );
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   color: #2f4f4f;
   font-family: "Raleway", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
