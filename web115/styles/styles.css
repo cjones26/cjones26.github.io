@@ -71,12 +71,8 @@ header nav {
   text-align: center;
 }
 
-header nav ul {
-  padding: 20px;
-}
-
 header nav ul li {
-  display: inline;
+  display: inline-block;
   text-wrap: nowrap;
 }
 
