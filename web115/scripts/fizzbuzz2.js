@@ -38,13 +38,16 @@ form.addEventListener("submit", function (event) {
   for (let x = 1; x <= count; x++) {
     // Create a new list item
     const listItem = document.createElement("li");
-    if (checkDivision(x, firstDivisor)) {
+
+    if (checkDivision(x, firstDivisor) && checkDivision(x, secondDivisor)) {
+      listItem.textContent = `PlushyBone (divisible by ${firstDivisor} and ${secondDivisor})`;
+    } else if (checkDivision(x, firstDivisor)) {
       listItem.textContent = `Plushy (divisible by ${firstDivisor})`;
     } else if (checkDivision(x, secondDivisor)) {
       listItem.textContent = `Bone (divisible by ${secondDivisor})`;
     } else {
       listItem.textContent =
-        "Not a Plushy Bone (not divisible by either divider)";
+        "Not a Plushy, Bone, or PlushyBone (not divisible by either divider)";
     }
 
     // Append the list item to the loop list
