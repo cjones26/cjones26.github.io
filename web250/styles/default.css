@@ -106,6 +106,7 @@ h2 {
 h3 {
   color: var(--color-header);
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 a {
@@ -122,11 +123,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
 }
 
 nav ul li {
