@@ -18,7 +18,7 @@
 [data-theme="dark"] {
   --color-background-base: #2f4f4f;
   --color-background-end: #000000;
-  --color-foreground: #d3d3d3;
+  --color-foreground: #f0f0f0;
   --color-header: #daa520;
   --color-link: #ffd700;
   --color-link-hover: #ffb14e;
@@ -45,7 +45,46 @@ body {
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
   font-size: 100%;
-  margin: 5% 20%;
+  margin: 3% 20%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+header img {
+  align-self: center;
+}
+
+header nav {
+  align-items: center;
+  background: var(--color-background-base);
+  background-image: radial-gradient(
+    circle at 0.5% 50.5%,
+    var(--color-background-end) 100.2% var(--color-background-base) 0
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.219);
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  text-wrap: nowrap;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
 
 h1 {
@@ -61,6 +100,7 @@ h2 {
   color: var(--color-header);
   font-family: "Montserrat", sans-serif;
   font-size: 2em;
+  margin: 0;
 }
 
 h3 {
@@ -90,7 +130,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 10px;
+  padding: 15px 20px;
 }
 
 figure figcaption {
@@ -98,9 +138,20 @@ figure figcaption {
 }
 
 main {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8f9fa59;
+  padding: 20px 20px 0 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.219), 0 2px 4px rgba(0, 0, 0, 0.219);
+  border-radius: 0 0 5px 5px;
+  font-size: 1.2em;
+}
+
+main ul {
+  text-align: left;
 }
 
 footer {
@@ -109,16 +160,25 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 20px 0;
 }
 
 footer nav,
 footer #tagline {
-  margin: 20px 0 20px;
+  margin: 20px 0;
 }
 
 footer #company-info {
-  font-size: small;
+  font-size: 0.875rem;
   margin-bottom: 10px;
+}
+
+footer #tagline {
+  font-weight: 800;
+}
+
+#headshot {
+  border-radius: 5px;
 }
 
 /* Table styles */
@@ -207,6 +267,10 @@ button:hover {
 button:active {
   background-color: var(--color-button-active-background);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#toggle-theme {
+  margin-top: 20px;
 }
 
 /* Media queries */
