@@ -266,7 +266,7 @@ button:active {
 }
 
 #toggle-theme {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 /* Media queries */

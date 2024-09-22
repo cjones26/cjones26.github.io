@@ -47,6 +47,8 @@
   </main>
 
   <?php include 'contents/shared/footer.php'; ?>
+
+  <script src="scripts/toggle-theme.js"></script>
 </body>
 
 </html>
