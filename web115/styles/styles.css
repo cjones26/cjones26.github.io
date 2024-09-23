@@ -14,11 +14,9 @@ body {
 }
 
 h1 {
-  display: flex;
   color: #5c327b;
   font-family: "Fredoka", sans-serif;
   font-size: 3em;
-  justify-content: center;
   text-align: center;
 }
 
@@ -27,11 +25,13 @@ h2 {
   font-family: "Fredoka", sans-serif;
   font-size: 2em;
   margin: 0;
+  text-align: center;
 }
 
 h3 {
   color: #5c327b;
   font-family: "Fredoka", sans-serif;
+  text-align: center;
 }
 
 a {
@@ -50,8 +50,14 @@ header {
   align-content: center;
 }
 
-header img {
-  align-self: center;
+header div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+header div img {
+  margin-right: 20px;
 }
 
 header nav {
@@ -92,16 +98,15 @@ figure figcaption {
 }
 
 main {
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   background-color: #f8f9fa59;
   padding: 20px 20px 0 20px;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.219), 0 2px 4px rgba(0, 0, 0, 0.219);
   border-radius: 0 0 5px 5px;
   font-size: 1.2em;
+  text-align: left;
 }
 
 main ul {
@@ -119,7 +124,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 20px 0;
 }
 
 footer nav,
