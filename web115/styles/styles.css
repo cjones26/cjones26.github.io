@@ -126,9 +126,12 @@ footer {
   text-align: center;
 }
 
-footer nav,
-footer #tagline {
+footer nav {
   margin: 20px 0;
+}
+
+footer #tagline {
+  margin-bottom: 20px;
 }
 
 footer #company-info {
