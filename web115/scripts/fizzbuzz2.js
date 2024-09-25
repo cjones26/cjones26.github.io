@@ -33,7 +33,16 @@ form.addEventListener("submit", function (event) {
     .replace(/\s+/g, " ")
     .trim();
 
-  const count = prompt(`How high do you want to count, ${firstName}?`);
+  let count;
+  do {
+    count = prompt(`How high do you want to count, ${firstName}?`);
+    if (isNaN(count) || count === null || count.trim() === "") {
+      alert("Please enter a valid number.");
+    } else {
+      count = Number(count);
+      break;
+    }
+  } while (true);
 
   for (let x = 1; x <= count; x++) {
     // Create a new list item
