@@ -82,6 +82,10 @@ header nav ul li {
   text-wrap: nowrap;
 }
 
+header nav {
+  padding: 5px 0;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -90,7 +94,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 15px 20px;
+  padding: 5px 20px;
 }
 
 figure figcaption {
