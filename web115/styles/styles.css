@@ -253,6 +253,7 @@ ul li {
 }
 
 #loop-list {
+  align-self: center;
   text-align: left;
 }
 
