@@ -35,6 +35,7 @@ form.addEventListener("submit", function (event) {
     .trim();
 
   let count;
+
   do {
     count = prompt(`How high do you want to count, ${firstName}?`);
     if (isNaN(count) || count === null || count.trim() === "") {
@@ -46,10 +47,10 @@ form.addEventListener("submit", function (event) {
   } while (true);
 
   for (let x = 1; x <= count; x++) {
-    // Create a new list item
     const listItem = document.createElement("li");
 
     let found = false;
+
     for (const obj of fizzBuzzBang) {
       for (const [divisor, word] of Object.entries(obj)) {
         if (checkDivision(x, Number(divisor))) {
@@ -59,13 +60,13 @@ form.addEventListener("submit", function (event) {
         }
       }
     }
+
     if (!found) {
       listItem.textContent = `Not divisible by ${fizzBuzzBang
         .map((obj) => Object.keys(obj)[0])
         .join(", ")}`;
     }
 
-    // Append the list item to the loop list
     loopList.appendChild(listItem);
   }
 });
