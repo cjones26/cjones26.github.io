@@ -220,7 +220,8 @@ input[type="text"] {
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 15px;
-  width: 100%;
+  display: block;
+  /* width: 100%; */
 }
 
 button {
@@ -245,6 +246,10 @@ ul li {
 
 #greeting {
   margin-bottom: 20px;
+}
+
+#name-form {
+  align-self: center;
 }
 
 #loop-list {
