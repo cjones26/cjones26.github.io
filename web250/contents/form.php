@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first-name-get'])) {
 <hr>
 
 <!-- GET Form -->
-<h2>GET Form</h2>
+<h2>GET Form Hi</h2>
 <form method="get" action="">
   <input type="hidden" name="page" value="form">
   <label for="first-name-get">First Name:</label>
