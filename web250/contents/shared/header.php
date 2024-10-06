@@ -10,6 +10,7 @@
       <li><a href="?page=introduction">Introduction</a></li>
       <li><a href="?page=brand">Brand Guide</a></li>
       <li><a href="?page=demo">PHP Demo</a></li>
+      <li><a href="?page=form">Form</a></li>
     </ul>
   </nav>
 </header>

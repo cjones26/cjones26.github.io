@@ -95,6 +95,14 @@ nav ul li {
   padding: 5px 20px;
 }
 
+hr {
+  height: 1px;
+  background: var(--color-foreground);
+  border: none; /* Ensure no default border is applied */
+  margin: 20px 0;
+  width: 100%;
+}
+
 h1 {
   color: var(--color-header);
   display: flex;
@@ -248,9 +256,14 @@ th {
   background-color: var(--color-link-hover);
 }
 
-/* Button styles */
+/* Form styles */
 
-button {
+form {
+  text-align: left;
+}
+
+button,
+input[type="submit"] {
   background-color: var(--color-button-background);
   color: var(--color-button-foreground);
   border: none;
@@ -263,18 +276,52 @@ button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
   background-color: var(--color-button-hover-background);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-button:active {
+button:active,
+input[type="submit"]:active {
   background-color: var(--color-button-active-background);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #toggle-theme {
   margin: 20px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: var(--color-foreground);
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+input,
+select {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid var(--color-table-border);
+  border-radius: 5px;
+  background-color: var(--color-background-base);
+  color: var(--color-foreground);
+  font-family: "Montserrat", sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input:focus,
+select:focus {
+  border-color: var(--color-link);
+  box-shadow: 0 0 5px var(--color-link);
+  outline: 2px solid var(--color-link); /* Provide a visible outline */
 }
 
 /* Media queries */

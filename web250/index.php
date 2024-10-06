@@ -39,6 +39,9 @@
       case 'introduction':
         include 'contents/introduction.php';
         break;
+      case 'form':
+        include 'contents/form.php';
+        break;
       default:
         include 'contents/home.php';
         break;
