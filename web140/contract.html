@@ -8,11 +8,11 @@
 </head>
 
 <body>
-  <header>
-    <h1>Charles Jones, WEB140-N801, Course Contract</h1>
-  </header>
+  <div data-include="components/header.html"></div>
 
   <main>
+    <h2>Course Contract</h2>
+
     <p>
       I, Charles L. Jones agree to adbide by the terms of the course contract in my Fall 2024, WEB140-N801 Web
       Development tools with my instructor, Ella McManus.
@@ -32,20 +32,14 @@
       the image appropriately. Click the image for a link to the original. Both files are stored and named appropriately
       in my images folder inside this course's folder.</p>
 
-    <a href="images/workflow-full.jpg">
+    <a href="images/workflow-full.jpg" class="center" style="margin-bottom: 10px">
       <img src="images/workflow-annotated.jpg" alt="Link to full workflow image">
     </a>
   </main>
 
-  <footer>
-    <a href="https://validator.w3.org/check?uri=referer">
-      <img src="images/button-valid-html5.png" alt="Link to HTML validator">
-    </a>
+  <div data-include="components/footer.html"></div>
 
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-      <img src="images/button-valid-css.png" alt="Link to CSS validator">
-    </a>
-  </footer>
+  <script src="scripts/HTMLInclude.js"></script>
 </body>
 
 </html>
