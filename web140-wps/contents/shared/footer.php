@@ -8,7 +8,7 @@
     &#9553;
     <a href="https://cjones26.github.io/web115" target="_blank">WEB115.io</a>
     &#9553;
-    <a href="http://cjones26.infinityfreeapp.com" target="_blank">WEB250.io</a>
+    <a href="https://cjones26.github.io/web250" target="_blank">WEB250.io</a>
     &#9553;
     <a href="https://www.freecodecamp.org/cjones26" target="_blank">freeCodeCamp</a>
     &#9553;
