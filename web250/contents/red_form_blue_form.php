@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first-name-get'])) {
 }
 ?>
 
-<h2>Form</h2>
+<h2>Red Form Blue Form</h2>
 
 <hr>
 
