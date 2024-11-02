@@ -44,6 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['first-name-get'])) {
 
 <h2>Form</h2>
 
+<hr>
+
 <!-- POST Form -->
 <h3 class="red-form-blue-form">POST Form</h3>
 <form method="post" action="">

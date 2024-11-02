@@ -10,7 +10,8 @@
       <li><a href="?page=introduction">Introduction</a></li>
       <li><a href="?page=brand">Brand Guide</a></li>
       <li><a href="?page=demo">PHP Demo</a></li>
-      <li><a href="?page=form">Form</a></li>
+      <br>
+      <li><a href="?page=red_form_blue_form">Red Form Blue Form</a></li>
     </ul>
   </nav>
 </header>
