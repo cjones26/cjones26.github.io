@@ -263,8 +263,10 @@ th {
 
 /* Form styles */
 
-.red-form-blue-form {
-  margin: 0 0 15px 0;
+#red-form-blue-form {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 20px;
 }
 
 form {
