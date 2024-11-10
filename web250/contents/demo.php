@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <h2>PHP Demo</h2>
 
 <h3>Welcome to my PHP demo page for WEB250!</h3>

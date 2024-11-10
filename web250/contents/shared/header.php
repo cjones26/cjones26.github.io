@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <header>
   <img src="images/logo.png" alt="MoneyMingle Logo">
   <h1>Charles Jones' MoneyMingle</h1>
@@ -11,6 +9,7 @@
       <li><a href="?page=brand">Brand Guide</a></li>
       <li><a href="?page=demo">PHP Demo</a></li>
       <br>
+      <li><a href="?page=introduction_form">Introduction Form</a></li>
       <li><a href="?page=red_form_blue_form">Red Form Blue Form</a></li>
     </ul>
   </nav>

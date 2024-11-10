@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <h2>Course Contract</h2>
 
 <p>I, <a href="introduction.html">Charles L. Jones</a> agree to abide by the terms of the course contract in my

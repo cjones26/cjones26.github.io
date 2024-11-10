@@ -39,6 +39,9 @@
       case 'introduction':
         include 'contents/introduction.php';
         break;
+      case 'introduction_form':
+        include 'contents/introduction_form.php';
+        break;
       case 'red_form_blue_form':
         include 'contents/red_form_blue_form.php';
         break;

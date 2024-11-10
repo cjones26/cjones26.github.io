@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-
 <h2>Introduction</h2>
 
-<figure>
+<figure id="headshot-figure">
   <a href="images/headshot.jpg">
     <img id="headshot" src="images/headshot.jpg" alt="Charles Jones headshot, standing by a brick wall in a park">
   </a>
@@ -13,14 +11,14 @@
 
 <ul>
   <li>
-    Personal background: I was born in New Jersey back in 1989 before my
+    <strong>Personal background:</strong> I was born in New Jersey back in 1989 before my
     father moved our family down to North Carolina on Thanksgiving Day
     1996. I attended Providence High School class of 2007, where I met my
     beautiful wife in discrete math class–she had a “discreet” ninja on
     her binder and I immediately knew she was the one.
   </li>
   <li>
-    Professional: In high school, I got my first ever job at Old Navy, and
+    <strong>Professional background:</strong> In high school, I got my first ever job at Old Navy, and
     after realizing I had no idea what a sequin was (nor any reason to
     care), I decided I despised working in retail and got a job at Ben &
     Jerry’s. After working at Ben &amp; Jerry’s for a year or two, I was
@@ -37,11 +35,11 @@
     Native web technology stack.
   </li>
   <li>
-    Academic background: I’ve been a student at CPCC since 2008–this time,
+    <strong>Academic background:</strong> I’ve been a student at CPCC since 2008–this time,
     I’m serious, and I’m going to finish my AAS degree!
   </li>
   <li>
-    Background in the subject matter of this course: My fascination with
+    <strong>Background in the subject matter of this course:</strong> My fascination with
     computers began all the way back in 1994, when my father brought home
     a 486DX running MS-DOS 6.0. I began working with HTML in the late
     ‘90s, tinkering away in Notepad before publishing to GeoCities and
@@ -53,7 +51,7 @@
     the JavaScript / Node.js ecosystem.
   </li>
   <li>
-    Primary Computer Platform: Linux — I started out with Gentoo and
+    <strong>Primary Computer Platform:</strong> Linux — I started out with Gentoo and
     realized I don’t have the time to compile my entire OS. I shortly
     moved into utilizing both Slackware and Arch, before finally settling
     on Mint, which just works. After I got a new laptop, Mint wasn’t doing
@@ -61,21 +59,21 @@
     distro but still works great for me.
   </li>
   <li>
-    Courses I'm taking and reason for each:
+    <strong>Courses I'm taking and reason for each:</strong>
     <ul>
       <li>
-        <b>WEB250 - Data Driven Websites</b>: It’s been a long time since I’ve
+        <strong>WEB250 - Data Driven Websites</strong>: It’s been a long time since I’ve
         worked with PHP, so I feel that I’m going to really like this
         course as I remember thoroughly developing on a LAMP stack with
         PHP a long, long time ago.
       </li>
       <li>
-        <b>WEB115 - Web Markup and Scripting</b>: Though I’ve been a professional
+        <strong>WEB115 - Web Markup and Scripting</strong>: Though I’ve been a professional
         frontend developer for almost a decade, it’s always great to
         refresh on basic markup and scripting.
       </li>
       <li>
-        <b>WEB140 - Web Development Tools</b>: I am very familiar with web
+        <strong>WEB140 - Web Development Tools</strong>: I am very familiar with web
         development tools, but Wordpress is something I’m sorely lacking
         in knowledge, and being how widely it’s used, I feel this class
         will be a great introduction!
@@ -83,7 +81,7 @@
     </ul>
   </li>
   <li>
-    Funny story or interesting item about yourself to remember you by: I’m
+    <strong>Funny story or interesting item about yourself to remember you by:</strong> I’m
     the guy who has been at CPCC since 2008 and still yet to attain my
     degree.
   </li>

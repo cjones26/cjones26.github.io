@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <h2>Home</h2>
 
 <h3>Welcome to my Home page for WEB250!</h3>

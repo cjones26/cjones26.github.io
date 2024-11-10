@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <h2>Brand Guide</h2>
 
 <p>
@@ -14,7 +12,7 @@
   matters.
 </p>
 
-<h2>Guiding Principles</h2>
+<h3>Guiding Principles</h3>
 
 <ol>
   <li><strong>Transparency</strong>: Ensure complete visibility into shared finances, allowing all parties to stay
@@ -34,7 +32,7 @@
     financial future and achieve shared goals.</li>
 </ol>
 
-<h2>Target Market</h2>
+<h3>Target Market</h3>
 
 <p>MoneyMingle targets couples, partners, families, and close friends who share financial responsibilities or goals.
   This
@@ -44,7 +42,7 @@
   and
   those looking for a straightforward solution to manage shared finances with ease and transparency.</p>
 
-<h2>Brand Guidelines</h2>
+<h3>Brand Guidelines</h3>
 
 <button type="button" id="toggle-theme" data-theme-toggle="" aria-label="Toggle Theme">Toggle theme</button>
 

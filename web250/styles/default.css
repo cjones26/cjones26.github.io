@@ -152,7 +152,6 @@ figure figcaption {
 }
 
 main {
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,7 +189,12 @@ footer #tagline {
   font-weight: 800;
 }
 
+#headshot-figure {
+  align-self: center;
+}
+
 #headshot {
+  align-self: center;
   border-radius: 5px;
 }
 
@@ -267,6 +271,35 @@ form {
   text-align: left;
 }
 
+#introduction-form input,
+#introduction-form textarea {
+  margin-bottom: 20px;
+}
+
+#introduction-form .course-container {
+  display: flex;
+}
+
+#introduction-form [name="course-name[]"] {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+#introduction-form [name="course-reason[]"] {
+  margin-bottom: 5px;
+}
+
+#introduction-form #add-course {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#introduction-form textarea {
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+}
+
 button,
 input[type="submit"] {
   background-color: var(--color-button-background);
@@ -291,6 +324,28 @@ button:active,
 input[type="submit"]:active {
   background-color: var(--color-button-active-background);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid var(--color-table-border);
+  border-radius: 5px;
+  background-color: var(--color-background-base);
+  color: var(--color-foreground);
+  font-family: "Montserrat", sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+textarea:focus {
+  border-color: var(--color-link);
+  box-shadow: 0 0 5px var(--color-link);
+  outline: 2px solid var(--color-link); /* Provide a visible outline */
 }
 
 #toggle-theme {
