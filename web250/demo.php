@@ -23,7 +23,7 @@
   <main>
     <h2>PHP Demo</h2>
 
-    <p>Welcome to my PHP demo page for WEB250!</p>
+    <h3>Welcome to my PHP demo page for WEB250!</h3>
 
     <p>My name is <?php echo "Charles Jones" ?> and the current date is <?php echo date('l, F jS, Y'); ?>.</p>
 

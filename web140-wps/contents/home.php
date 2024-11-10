@@ -2,7 +2,7 @@
 
 <h2>Home</h2>
 
-<p>Welcome to my one page site for WEB140!</p>
+<h3>Welcome to my one page site for WEB140!</h3>
 
 <p>In this class, I’m learning how to create and manage websites using WordPress, one of the most popular platforms
   out
