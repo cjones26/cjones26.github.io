@@ -3,7 +3,7 @@
 <?php if ($_SERVER['REQUEST_METHOD'] != 'POST'): ?>
   <form action="" method="post" enctype="multipart/form-data" id="introduction-form">
     <label for="image-url">Image URL:</label>
-    <input type="url" id="image-url" name="image-url" value="http://localhost/images/headshot.jpg">
+    <input type="url" id="image-url" name="image-url" value="http://cjones26.infinityfreeapp.com/images/headshot.jpg">
 
     <label for="image-caption">Image Caption:</label>
     <input type="text" id="image-caption" name="image-caption" value="Charles Jones standing by a brick wall in a park">
