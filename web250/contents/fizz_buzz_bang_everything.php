@@ -106,7 +106,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <button type="submit">Submit</button>
 </form>
 
-<!-- Output -->
 <div id="results">
   <?= $output; ?>
 </div>
