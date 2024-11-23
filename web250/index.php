@@ -45,6 +45,9 @@
       case 'red_form_blue_form':
         include 'contents/red_form_blue_form.php';
         break;
+      case 'fizz_buzz_bang_everything':
+        include 'contents/fizz_buzz_bang_everything.php';
+        break;
       default:
         include 'contents/home.php';
         break;
