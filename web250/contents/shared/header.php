@@ -38,6 +38,7 @@
       <br>
       <li><a href="?page=introduction_form">Introduction Form</a></li>
       <li><a href="?page=red_form_blue_form">Red Form Blue Form</a></li>
+      <li><a href="?page=everything_form">Everything Form</a></li>
       <li><a href="?page=fizz_buzz_bang_everything">FizzBuzzBangEverything!</a></li>
       <li><a href="?page=dashboard">Dashboard (Protected)</a></li>
     </ul>

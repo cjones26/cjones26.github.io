@@ -340,6 +340,50 @@ form {
   width: 100%;
 }
 
+#everything-form form {
+  background: darkslategray;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#everything-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#everything-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#everything-form .radio-group,
+#everything-form .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#everything-form input[type="radio"],
+#everything-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#everything-form .radio-group label,
+#everything-form .checkbox-group label {
+  font-weight: normal;
+}
+
+#everything-form textarea {
+  resize: vertical;
+}
+
+#everything-form-header {
+  margin-bottom: 20px;
+}
+
 button,
 input[type="submit"] {
   background-color: var(--color-button-background);

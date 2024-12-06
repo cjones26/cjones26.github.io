@@ -50,6 +50,9 @@
       case 'fizz_buzz_bang_everything':
         include 'contents/fizz_buzz_bang_everything.php';
         break;
+      case 'everything_form':
+        include 'contents/everything_form.php';
+        break;
       case 'login_form':
         include 'contents/login_form.php';
         break;
