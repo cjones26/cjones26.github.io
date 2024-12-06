@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 
@@ -47,6 +49,21 @@
         break;
       case 'fizz_buzz_bang_everything':
         include 'contents/fizz_buzz_bang_everything.php';
+        break;
+      case 'login_form':
+        include 'contents/login_form.php';
+        break;
+      case 'logout_success':
+        include 'contents/logout_success.php';
+        break;
+      case 'register':
+        include 'contents/register.php';
+        break;
+      case 'dashboard':
+        include 'contents/dashboard.php';
+        break;
+      case 'delete_transaction_confirmation':
+        include 'contents/delete_transaction_confirmation.php';
         break;
       default:
         include 'contents/home.php';

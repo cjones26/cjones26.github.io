@@ -67,8 +67,6 @@ header nav {
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
-  border-radius: 5px 5px 0 0;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.219);
   display: flex;
   justify-content: center;
   font-size: 1.2em;
@@ -82,6 +80,21 @@ header nav ul li {
 
 header nav {
   padding: 5px 0;
+}
+
+header div {
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.219);
+}
+
+header #auth-header {
+  background-color: #2f4f3f;
+  padding: 10px;
+  text-align: right;
+}
+
+header #login-link {
+  margin-right: 10px;
 }
 
 nav ul {
@@ -216,6 +229,14 @@ table {
 
 table tr td:first-child {
   font-weight: bold;
+}
+
+table thead a {
+  color: #0066af;
+}
+
+table thead a:hover {
+  color: #3b3b3b;
 }
 
 th,
@@ -401,6 +422,78 @@ select:focus {
   border-color: var(--color-link);
   box-shadow: 0 0 5px var(--color-link);
   outline: 2px solid var(--color-link); /* Provide a visible outline */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Login styles */
+
+#login-header {
+  margin-bottom: 20px;
+}
+
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form-error {
+  color: red;
+  text-align: center;
+}
+
+/* Registration styles */
+
+#register-container {
+  width: 300px;
+  /* Glass effect */
+  margin: 0 auto;
+  /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#register-container-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Dashboard styles */
+#add-transaction-form {
+  margin: 0 25px;
+}
+
+.edit-button {
+  margin-right: 15px;
+}
+
+/* Delete confirmation styles */
+#delete-button {
+  margin-right: 15px;
+}
+
+/* General classes */
+
+.text-center {
+  text-align: center;
 }
 
 /* Media queries */
