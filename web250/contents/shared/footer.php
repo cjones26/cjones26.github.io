@@ -22,6 +22,6 @@
     Managing Money Together, Made Simple.
   </div>
   <div id="company-info">
-    Designed by Valence Software &copy;2024
+    Designed by <a href="business_card.html">Charles Jones</a> @ Valence Software &copy;2024
   </div>
 </footer>

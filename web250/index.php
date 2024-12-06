@@ -53,6 +53,9 @@
       case 'login_form':
         include 'contents/login_form.php';
         break;
+      case 'login_success':
+        include 'contents/login_success.php';
+        break;
       case 'logout_success':
         include 'contents/logout_success.php';
         break;

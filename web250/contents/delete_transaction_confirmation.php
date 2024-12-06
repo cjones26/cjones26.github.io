@@ -1,5 +1,6 @@
 <?php
 $id = $_GET['id'];
+
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
   echo '<p>Please <a href="?page=login_form">login</a> to access this page.</p>';

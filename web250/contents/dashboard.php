@@ -87,7 +87,7 @@ if (!isset($_SESSION['user_id'])) {
     <tbody>
       <?php foreach ($transactions as $transaction): ?>
         <?php if (isset($_GET['edit']) && $_GET['edit'] == $transaction['id']): ?>
-          <!-- Edit Mode -->
+          <!-- Edit mode -->
           <tr>
             <form method="post" action="index.php?page=dashboard">
               <input type="hidden" name="edit_transaction" value="1">
@@ -111,12 +111,12 @@ if (!isset($_SESSION['user_id'])) {
             </form>
           </tr>
         <?php else: ?>
-          <!-- Read-Only Mode -->
+          <!-- Read-only mode -->
           <tr>
             <td><?= htmlspecialchars($transaction['date']) ?></td>
             <td><?= htmlspecialchars($transaction['description']) ?></td>
             <td><?= htmlspecialchars($transaction['category']) ?></td>
-            <td><?= htmlspecialchars($transaction['amount']) ?></td>
+            <td>$<?= number_format($transaction['amount'], 2) ?></td>
             <td>
               <a class="edit-button" href="index.php?page=dashboard&edit=<?= $transaction['id'] ?>">✏️ Edit</a>
               <a href="index.php?page=delete_transaction_confirmation&id=<?= $transaction['id'] ?>">🗑️ Delete</a>
