@@ -7,15 +7,17 @@
   <meta name="description" content="Professional sample page for WEB215 - Advanced Web Development">
   <meta name="author" content="Your Name">
   <meta name="keywords" content="WEB215, HTML5, CSS3, responsive design, web development">
-  <title>Charles Jones' WEB215 | Home</title>
+  <title>Charles Jones' Cool Jaguar | WEB215 | Introduction</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/default.css">
+  <script src="https://lint.page/kit/6664c1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <div id="logo"><img src="images/logo.png" alt="Logo" width="32" height="32">
-      <h1>WEB215</h1>
+    <div id="logo">
+      <img src="images/logo.png" alt="Logo" width="32" height="32">
+      <h1 id="logo-text">Charles Jones' Cool Jaguar WEB215</h1>
     </div>
     <nav>
       <input type="checkbox" id="menu-toggle">
@@ -39,7 +41,7 @@
 
       <figure id="headshot" class="text-center">
         <a href="images/headshot.jpg">
-          <img id="headshot" src="images/headshot.jpg" alt="Charles Jones headshot, standing by a brick wall in a park">
+          <img src="images/headshot.jpg" alt="Charles Jones headshot, standing by a brick wall in a park">
         </a>
         <figcaption>
           Charles Jones standing by a brick wall in a park
@@ -126,7 +128,7 @@
   </main>
 
   <footer>
-    <p>Designed by Valence Software &copy;2025</p>
+    <p>Website designed by Valence Software &copy;2025</p>
   </footer>
 
   <script>
@@ -138,7 +140,7 @@
       menuToggle.checked = false;
     });
 
-    menuLinks.forEach(link => {
+    menuLinks.forEach((link) => {
       link.addEventListener('click', () => {
         menuToggle.checked = false;
       });
