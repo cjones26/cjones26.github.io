@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional sample page for WEB215 - Advanced Web Development">
+  <meta name="author" content="Your Name">
+  <meta name="keywords" content="WEB215, HTML5, CSS3, responsive design, web development">
+  <title>Charles Jones' WEB215 | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+  <header>
+    <div id="logo"><img src="images/logo.png" alt="Logo" width="32" height="32">
+      <h1>WEB215</h1>
+    </div>
+    <nav>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger" title="Open navigation menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <div class="fullscreen-menu">
+        <span class="close" title="Close menu">&times;</span>
+        <a href="./">Home</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="contract.html">Contract</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Course Contract</h2>
+
+    <p>I, <a href="introduction.html">Charles L. Jones</a> agree to abide by the terms of the course contract in my
+      Spring 2025, WEB215, Advanced Markup and Scripting with my instructor,
+      Professor D.I. von Briesen
+    </p>
+
+    <p>
+      I understand that all work that I do on publicly available online tools will be available to the world, and will
+      not put
+      information there that is inappropriate for schoolwork, or that I wish to keep private.
+    </p>
+
+    <p>
+      I also understand that it is my work that counts for attendance, not logins or showing up for class. As such,
+      failure to
+      turn in assignments may show as absences.
+    </p>
+
+    <p>
+      I also understand that given the structure and content of this class it’s possible to find many examples online or
+      even
+      view my classmates' code directly. I swear that I will only use these resources to learn, and will not cut and
+      paste
+      code except where I have properly given credit (i.e. external libraries) and never from my classmates.
+    </p>
+
+    <p>Signed: Charles L. Jones, 01/17/2025</p>
+  </main>
+
+  <footer>
+    <p>Designed by Valence Software &copy;2025</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const closeButton = document.querySelector('.fullscreen-menu .close');
+    const menuLinks = document.querySelectorAll('.fullscreen-menu a');
+
+    closeButton.addEventListener('click', () => {
+      menuToggle.checked = false;
+    });
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.checked = false;
+      });
+    });
+  </script>
+</body>
+
+</html>
