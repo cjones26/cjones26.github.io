@@ -1,6 +1,6 @@
 :root {
   --primary-color: #6a4c93;
-  --secondary-color: #a05fa6;
+  --secondary-color: #6b486e;
   --accent-color: #c38d9e;
   --gradient-start: #c38d9e;
   --gradient-end: #6a4c93;
@@ -83,6 +83,10 @@ nav a:hover {
 
 figure {
   margin-bottom: 1rem;
+}
+
+#menu-toggle-label span {
+  display: none;
 }
 
 .hamburger {
