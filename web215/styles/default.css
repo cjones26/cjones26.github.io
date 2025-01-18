@@ -135,6 +135,7 @@ figure {
 }
 
 main {
+  align-content: center;
   flex: 1;
   padding: 2rem 6rem 2rem 6rem;
   color: var(--main-text-color);
