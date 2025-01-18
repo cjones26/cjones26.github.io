@@ -142,30 +142,13 @@ footer {
   padding: 1rem;
 }
 
-.cta {
-  margin: 2rem 0;
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: var(--accent-color);
-  color: var(--primary-color);
-  text-transform: uppercase;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.cta:hover {
-  background: var(--primary-color);
-  color: var(--text-color);
-}
-
 #menu-toggle {
   display: none;
 }
 
 /* Introduction classes */
 
-#headshot {
+#headshot-image {
   align-self: center;
   border-radius: 10px;
 }
