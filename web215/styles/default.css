@@ -1,7 +1,7 @@
 :root {
   --primary-color: #6a4c93;
   --secondary-color: #6b486e;
-  --accent-color: #c38d9e;
+  --accent-color: #ccceff;
   --gradient-start: #c38d9e;
   --gradient-end: #6a4c93;
   --text-color: #f2eef4;
@@ -70,14 +70,18 @@ nav ul {
   gap: 1rem;
 }
 
-nav a {
+a {
   color: var(--link-color);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+a:hover {
+  color: var(--accent-color);
+}
+
+a:visited {
   color: var(--accent-color);
 }
 
