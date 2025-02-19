@@ -1,3 +1,5 @@
 .vscode/
 mysql.sock
 docker/local-data
+.env
+web215/mern-app/mydata
