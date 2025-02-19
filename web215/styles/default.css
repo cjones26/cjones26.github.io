@@ -89,22 +89,49 @@ figure {
   margin-bottom: 1rem;
 }
 
-#menu-toggle-label span {
-  display: none;
-}
-
 .hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 0.3rem;
+  display: inline-block;
   cursor: pointer;
-  z-index: 1010;
+  position: relative;
+  width: 30px;
+  height: 24px;
 }
 
-.hamburger div {
-  width: 25px;
-  height: 3px;
-  background: var(--nav-text-color);
+.hamburger span,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: white;
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger::before {
+  top: 0;
+}
+
+.hamburger span {
+  top: 10px;
+}
+
+.hamburger::after {
+  bottom: 0;
+}
+
+/* When the menu is open, animate the hamburger */
+#menu-toggle:checked + .hamburger::before {
+  transform: translateY(10px) rotate(45deg);
+}
+
+#menu-toggle:checked + .hamburger span::before {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .hamburger::after {
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 .fullscreen-menu {
