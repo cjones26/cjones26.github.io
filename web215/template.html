@@ -14,24 +14,7 @@
 </head>
 
 <body>
-  <header>
-    <div id="logo">
-      <img src="images/logo.png" alt=">Charles Jones' Cool Jaguar WEB215 Logo" width="32" height="32">
-      <h1 id="logo-text">Charles Jones' Cool Jaguar WEB215</h1>
-    </div>
-    <nav>
-      <input type="checkbox" id="menu-toggle">
-      <label id="menu-toggle-label" for="menu-toggle" class="hamburger" aria-label="Open navigation menu">
-        <span></span>
-      </label>
-      <div class="fullscreen-menu">
-        <span class="close" title="Close menu">&times;</span>
-        <a href="./">Home</a>
-        <a href="introduction.html">Introduction</a>
-        <a href="contract.html">Contract</a>
-      </div>
-    </nav>
-  </header>
+  <div data-include="components/header.html"></div>
 
   <main>
     <section>
@@ -45,44 +28,9 @@
     </section>
   </main>
 
-  <footer>
-    <nav>
-      <a href="https://github.com/cjones26" target="_blank">GitHub</a> &#9553;
-      <a href="https://cjones26.github.io/" target="_blank">GitHub.io</a>
-      &#9553;
-      <a href="https://cjones26.github.io/web215" target="_blank">WEB215.io</a>
-      &#9553;
-      <a href="https://www.freecodecamp.org/cjones26" target="_blank">freeCodeCamp</a>
-      &#9553;
-      <a href="https://www.codecademy.com/profiles/cjones26" target="_blank">Codecademy</a>
-      &#9553;
-      <a href="https://jsfiddle.net/u/cjones26/fiddles/" target="_blank">JSFiddle</a>
-      &#9553;
-      <a href="https://www.linkedin.com/in/charlesljones/" target="_blank">LinkedIn</a>
-      &#9553;
-      <a href="https://www.nigglingaspirations.com" target="_blank">IT Blog</a>
-    </nav>
-    <p>Website designed by Valence Software, certified in <a
-        href="https://www.freecodecamp.org/certification/cjones26/responsive-web-design">RWD.</a>
-    </p>
-    <p>&copy;2025</p>
-  </footer>
+  <div data-include="components/footer.html"></div>
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const closeButton = document.querySelector('.fullscreen-menu .close');
-    const menuLinks = document.querySelectorAll('.fullscreen-menu a');
-
-    closeButton.addEventListener('click', () => {
-      menuToggle.checked = false;
-    });
-
-    menuLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        menuToggle.checked = false;
-      });
-    });
-  </script>
+  <script src="scripts/include.min.js"></script>
 </body>
 
 </html>
